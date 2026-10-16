@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuk ke Ruang Baca</title>
+    <!-- Memuat CSS Bootstrap 5.3.8 via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Ruang Baca</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Bantuan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Konten Utama / Form Login -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="card border-0 shadow rounded-4 p-4 p-md-5 bg-white">
+            <!-- Judul Form -->
+            <div class="text-center mb-4">
+              <h2 class="fw-bold fs-3">Masuk ke Ruang Baca</h2>
+              <p class="text-muted small">Temukan bacaan untuk hari ini</p>
+            </div>
+
+            <form>
+              <!-- Input Username -->
+              <div class="mb-3">
+                <label for="username" class="form-label text-secondary small fw-bold">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Masukkan username" />
+              </div>
+
+              <!-- Input Password -->
+              <div class="mb-3">
+                <label for="password" class="form-label text-secondary small fw-bold">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Masukkan password" />
+              </div>
+
+              <!-- Checkbox Ingat Saya -->
+              <div class="mb-4 form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe" />
+                <label class="form-check-label text-secondary small" for="rememberMe">Ingat saya</label>
+              </div>
+
+              <!-- Tombol Masuk -->
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-success py-2 fw-semibold">Masuk</button>
+              </div>
+
+              <!-- Tautan Lupa Password -->
+              <div class="text-center">
+                <a href="#" class="text-decoration-none text-secondary small">Lupa password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Memuat JavaScript Bootstrap 5.3.8 via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
